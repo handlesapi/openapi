@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Handles API documentation
+    url: https://handlesapi.com/docs
+    about: Guides, the API reference and error codes.
+  - name: Account, billing or API problems
+    url: mailto:support@handlesapi.com
+    about: For anything about your account, plan or a live API response, email support.
