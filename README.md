@@ -1,3 +1,5 @@
+![Handles API OpenAPI specification: a request and its JSON response](assets/readme-openapi.png)
+
 # Handles API OpenAPI specification
 
 This repository holds the [OpenAPI 3.1](https://spec.openapis.org/oas/latest.html) description of the [Handles API](https://handlesapi.com), a REST and MCP API that returns public data from X (Twitter), Instagram, TikTok, YouTube, Telegram, Bluesky, Twitch, Kick and LinkedIn companies in one consistent JSON shape. The single file, [`openapi.json`](openapi.json), describes all 113 endpoints under `https://api.handlesapi.com/v1`, their parameters, response envelope, error codes and credit costs. It is the source the [TypeScript](https://github.com/handlesapi/handlesapi-js) and [Python](https://github.com/handlesapi/handlesapi-python) clients are generated from.
@@ -39,6 +41,10 @@ npx @openapitools/openapi-generator-cli generate \
 The official clients already do this for you, with retries and credit headers handled: [handlesapi-js](https://github.com/handlesapi/handlesapi-js) and [handlesapi-python](https://github.com/handlesapi/handlesapi-python).
 
 ## Endpoints
+
+Each operation in the spec is rendered as a page in the [API reference](https://handlesapi.com/docs/reference), with request examples, parameters, response and errors.
+
+![The Handles API reference page for an endpoint: request in curl, parameters and response](assets/screenshot-reference.png)
 
 113 operations in 11 groups. Cost is credits per successful call; `live` means the data is read from the platform at request time rather than from the catalog. Full parameters and example responses: [API reference](https://handlesapi.com/docs/reference).
 
