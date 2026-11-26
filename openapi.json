@@ -30,7 +30,7 @@
  "tags": [
   {
    "name": "Accounts",
-   "description": "Check one account, on any of the every supported platform, in one shape: does it exist, how big is it, is it verified, when was it created, is it in our catalog and how stale is that reading. The catalog checks are index probes and cost nothing; add /live to read the platform itself.",
+   "description": "Check one account, on any supported platform, in one shape: does it exist, how big is it, is it verified, when was it created, is it in our catalog and how stale is that reading. The catalog checks are index probes and cost nothing; add /live to read the platform itself.",
    "x-scope": "directory:read",
    "x-endpoint-count": 5
   },
@@ -35103,7 +35103,7 @@
   {
    "scope": "scrape:live",
    "label": "Live scrape",
-   "description": "Read from the platform itself rather than from the catalog: a profile or channel on any of the every supported platform, and on X the whole content layer - timelines, posts, replies, quotes, threads, followers, search, lists and communities.",
+   "description": "Read from the platform itself rather than from the catalog: a profile or channel on any supported platform, and on X the whole content layer - timelines, posts, replies, quotes, threads, followers, search, lists and communities.",
    "sensitive": true
   },
   {

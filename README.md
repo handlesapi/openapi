@@ -4,7 +4,7 @@
 
 This repository holds the [OpenAPI 3.1](https://spec.openapis.org/oas/latest.html) description of the [Handles API](https://handlesapi.com), a REST and MCP API that returns public data from X (Twitter), Instagram, TikTok, YouTube, Telegram, Bluesky, Twitch, Kick and LinkedIn companies in one consistent JSON shape. The single file, [`openapi.json`](openapi.json), describes all 113 endpoints under `https://api.handlesapi.com/v1`, their parameters, response envelope, error codes and credit costs. It is the source the [TypeScript](https://github.com/handlesapi/handlesapi-js) and [Python](https://github.com/handlesapi/handlesapi-python) clients are generated from.
 
-Raw URL for tools: `https://raw.githubusercontent.com/handlesapi/openapi/main/openapi.json`
+Live URL (always current, CORS enabled): `https://handlesapi.com/openapi.json`. This repository keeps a copy of the same file, also available raw at `https://raw.githubusercontent.com/handlesapi/openapi/main/openapi.json`.
 
 ## Why
 
@@ -24,17 +24,17 @@ curl https://api.handlesapi.com/v1/accounts/youtube/mrbeast \
 
 ### Import into Postman or Insomnia
 
-Both import OpenAPI 3.1 from a URL. In Postman choose Import, then paste the raw URL above. In Insomnia choose Create, Import, From URL. Then set a bearer token (your key) on the collection or environment.
+Both import OpenAPI 3.1 from a URL. In Postman choose Import, then paste `https://handlesapi.com/openapi.json`. In Insomnia choose Create, Import, From URL. Then set a bearer token (your key) on the collection or environment.
 
 ### Generate a client
 
 ```bash
 # TypeScript types
-npx openapi-typescript https://raw.githubusercontent.com/handlesapi/openapi/main/openapi.json -o handlesapi.d.ts
+npx openapi-typescript https://handlesapi.com/openapi.json -o handlesapi.d.ts
 
 # Any language, with OpenAPI Generator
 npx @openapitools/openapi-generator-cli generate \
-  -i https://raw.githubusercontent.com/handlesapi/openapi/main/openapi.json \
+  -i https://handlesapi.com/openapi.json \
   -g python -o ./handlesapi-client
 ```
 
@@ -262,4 +262,4 @@ The same API is available to AI assistants as a remote MCP server at `https://ap
 - Examples: [handlesapi/examples](https://github.com/handlesapi/examples)
 - MCP server: [handlesapi/mcp](https://github.com/handlesapi/mcp)
 
-The specification file is kept identical to the one served with the API documentation. Handles API is an independent service and is not affiliated with any of the platforms it covers. It returns public data only. MIT licensed.
+The specification file is kept in sync with the one served at handlesapi.com/openapi.json. Handles API is an independent service and is not affiliated with any of the platforms it covers. It returns public data only. MIT licensed.

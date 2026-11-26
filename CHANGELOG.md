@@ -4,6 +4,10 @@ All notable changes to this project are documented here. The format follows [Kee
 
 ## [Unreleased]
 
+### Fixed
+
+- Spec descriptions: "any of the every supported platform" corrected to "any supported platform". The spec is also served at https://handlesapi.com/openapi.json.
+
 ## [1.0.0] - 2026-11-26
 
 ### Added
